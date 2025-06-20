@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #2a5298;
+  --secondary-color: #1e3c72;
+  --accent-color: #f9d423;
+  --bg-color: #f4f7fa;
+  --text-color: #222;
+  --header-bg: #fff;
+  --footer-bg: #222;
+  --footer-text: #fff;
+  --border-radius: 12px;
+  --shadow: 0 2px 16px rgba(42, 82, 152, 0.08);
+  --max-width: 900px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+header {
+  background: var(--header-bg);
+  box-shadow: var(--shadow);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+}
+
+main section {
+  margin-bottom: 2.5rem;
+  background: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+}
+
+main h2 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 0.75rem;
+}
+
+main h3 {
+  color: var(--secondary-color);
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+main article {
+  margin-bottom: 1.2rem;
+}
+
+main time {
+  color: #888;
+  font-size: 0.95rem;
+  margin-right: 0.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  list-style: none;
+}
+
+.skills-list li {
+  background: var(--accent-color);
+  color: #222;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 1.2rem 0;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem 0.5rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  main section {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+  .skills-list li {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.7rem;
+  }
+} 
